@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Books</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/title-logo.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body onload="bodymyFunction();">
+	<div class="loading-bg" id="loading">
+		<div class="loading">
+			<img src="images/loading.gif" class="loading-logo">
+		</div>
+	</div>
+
+	<div class="container" style="display: none;" id="myDiv">
+		<nav>
+			<img src="images/logo.png" class="nav-logo">
+			<ul class="nav-content">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+				<li class="nav-item"><a href="books.html" class="nav-link">Books</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
+			</ul>
+
+			<button class="nav-btn-sm" onclick="openNav()"><i class="fas fa-bars"></i></button>
+		</nav>
+		
+		<div id="mySidenav" class="sidenav">
+		  	<button class="closebtn" onclick="closeNav()">&times;</button>
+		  	<a href="index.html">Home</a>
+		  	<a href="#">About Us</a>
+		  	<a href="books.html">Books</a>
+		  	<a href="#">Contact Us</a>
+		  	<a href="#">Sign In</a>
+		</div>
+
+		<div class="container-box">
+			<div class="product">
+				<div class="product-content product-sm">
+					<div class="product-box" id="show-img1">
+						<img src="images/book (1).jpg" class="product-img">
+					</div>
+					<div class="product-box" id="show-img2">
+						<img src="images/book (2).jpg" class="product-img">
+					</div>
+					<div class="product-box" id="show-img3">
+						<img src="images/book (3).jpg" class="product-img">
+					</div>
+					<div class="product-box" id="show-img4">
+						<img src="images/book (4).jpg" class="product-img">
+					</div>
+
+					<br>
+					
+					<div class="product-box-item" onclick="showproduct(1);">
+						<img src="images/book (1).jpg" class="product-img-item">
+					</div>
+					<div class="product-box-item" onclick="showproduct(2);">
+						<img src="images/book (2).jpg" class="product-img-item">				
+					</div>
+					<div class="product-box-item" onclick="showproduct(3);">
+						<img src="images/book (3).jpg" class="product-img-item">		
+					</div>
+					<div class="product-box-item" onclick="showproduct(4);">
+						<img src="images/book (4).jpg" class="product-img-item">				
+					</div>
+				</div>
+
+				<div class="product-content">
+					<p class="product-name">Book Name</p>
+					<span class="product-about">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+					<p class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+					<p class="product-price">$400 <s>$500</s></p>
+					<div class="cart-button">
+						<button onclick="decrement();">-</button>
+						<input type="number" value="1" name="" min=1 max=5 id="demoInput">
+						<button onclick="increment();">+</button>
+						<button class="add-btn">Add To Cart</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-box" style="clear: both;">
+			<p class="heading tc">Related Books</p>
+			<a href="viewbooks.html" class="level2-content">
+				<div class="level2-img-box">
+					<img src="images/book (1).jpg" class="level2-img">
+				</div>
+				<p class="level2-head tc">Book Name</p>
+				<p class="level2-head-content tc">$400 <s>$500</s></p>
+			</a>
+			<a href="viewbooks.html" class="level2-content">
+				<div class="level2-img-box">
+					<img src="images/book (2).jpg" class="level2-img">
+				</div>
+				<p class="level2-head tc">Book Name</p>
+				<p class="level2-head-content tc">$400 <s>$500</s></p>
+			</a>
+			<a href="viewbooks.html" class="level2-content">
+				<div class="level2-img-box">
+					<img src="images/book (3).jpg" class="level2-img">
+				</div>
+				<p class="level2-head tc">Book Name</p>
+				<p class="level2-head-content tc">$400 <s>$500</s></p>
+			</a>
+			<a href="viewbooks.html" class="level2-content">
+				<div class="level2-img-box">
+					<img src="images/book (4).jpg" class="level2-img">
+				</div>
+				<p class="level2-head tc">Book Name</p>
+				<p class="level2-head-content tc">$400 <s>$500</s></p>
+			</a>
+		</div>
+
+		<div class="container-box">
+			<div class="footer-box">
+				<img src="images/logo.png" class="footer-logo">
+				<div class="footer-content">
+					<ul>
+						<li class="footer-head">About Us</li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+
+					<ul>
+						<li class="footer-head">Books Categories</li>
+						<li><a href="#">Fiction</a></li>
+						<li><a href="#">Non Fiction</a></li>
+						<li><a href="#">Poetry</a></li>
+						<li><a href="#">Folktale</a></li>
+						<li><a href="#">Drama</a></li>
+					</ul>
+
+					<ul>
+						<li class="footer-head">Help</li>
+						<li><a href="#">Your address goes here Dummy address......</a></li>
+						<li><a href="#">+91 123456789<br>+91 123456789</a></li>
+						<li><a href="#">info@example1.com<br>info@exampe1.com</a></li>
+					</ul>
+
+					<ul>
+						<li class="footer-head">Follow Us</li>
+						<li><a href="#">LinkedIn</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+					</ul>
+				</div>
+				<p class="copyright tc">&copy; 2021 Books</p>
+			</div>
+		</div>
+	</div>
+
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</body>
+</html>

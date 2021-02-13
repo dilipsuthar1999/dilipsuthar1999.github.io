@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Turf Booking</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/title-logo.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<img src="images/logo.png" class="nav-logo">
+			<button class="nav-menu" onclick="openNav();"><i class="fas fa-bars"></i></button>
+		</nav>
+		
+		<div id="mySidenav" class="sidenav">
+		  	<button class="closebtn" onclick="closeNav();">&times;</button>
+		  	<a href="index.html">Home</a>
+		  	<a href="#">About Us</a>
+		  	<a href="turf.html">Book Now</a>
+		  	<a href="#">Contact Us</a>
+		  	<a href="#">Refund Policy</a>
+		</div>
+
+		<div id="show-images-turf" class="show-images-turf">
+		  	<button class="closebtn" onclick="closeimages();">&times;</button>
+			<img src="images/turf (1).jpg" class="show-img-of-turf">
+			<img src="images/turf (2).jpg" class="show-img-of-turf">
+		</div>
+
+		<div class="container-box">
+			<div class="turf-booking-box">
+				<div class="turf-images-box">
+					<img src="images/turf (1).jpg" class="turf-image1">
+					<img src="images/turf (1).jpg" class="turf-image2">
+					<div style="position: relative;">
+						<img src="images/turf (1).jpg" class="turf-image3">
+						<button class="turf-image3 turf-image3-over-img tc" onclick="openimages();">+ 2 More</button>
+					</div>
+				</div>
+
+				<div class="turf-about-box">
+					<p class="turf-name">Turf Name</p>
+					<p class="turf-address"><i class="fas fa-location-arrow"></i> Your address goes here Dummy address......</p>
+					<p class="turf-time"><i class="far fa-clock"></i> 6:00 am - 11:00 pm</p>
+					<p class="turf-price">$600 <span>per hour</span></p>
+
+					<p class="turf-think-to-remember">THINGS TO REMEMBER</p>
+					<ul class="turf-think-to-remember-content">
+						<li>Wear appropriate sports attire and shoes while playing.</li>
+						<li>Be present at the venue 10 mins prior to the booked slot.</li>
+					</ul>
+
+					<input name="turf-price" value="600" id="turf-price" style="display: none;">
+
+					<div class="booking">
+						<p class="booking-head tc">Book Here</p>
+						<input type="date" name="booking_date" class="booking-date" id="booking-date">
+
+						<div class="booking-btw tc">
+							<button class="booking-btw1 booking-btw1-active" onclick="timevise(event,'morning');">6AM-12PM</button>
+							<button class="booking-btw1" onclick="timevise(event,'afternoon');">12PM-6PM</button>
+							<button class="booking-btw1" onclick="timevise(event,'evening');">After 6PM</button>
+						</div>
+						
+						<div class="timevisedisplay" id="morning">
+							<div class="booking-timing">
+								<div class="book-time">
+									7:00 AM - 8:00 AM
+								</div>
+								<input type="checkbox" class="book-time-add" value="7:00AM-8:00AM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									8:00 AM - 9:00 AM
+								</div>
+								<input type="checkbox" class="book-time-add" value="8:00AM-9:00AM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									9:00 AM - 10:00 AM
+								</div>
+								<input type="checkbox" class="book-time-add" value="9:00AM-10:00AM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									10:00 AM - 11:00 AM
+								</div>
+								<input type="checkbox" class="book-time-add" value="10:00AM-11:00AM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									11:00 AM - 12:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="11:00AM-12:00PM">
+							</div>
+						</div>
+
+						<div class="timevisedisplay" id="afternoon">
+							<div class="booking-timing">
+								<div class="book-time">
+									12:00 PM - 1:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="12:00PM-1:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									1:00 PM - 2:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="1:00PM-2:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									2:00 PM - 3:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="2:00PM-3:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									3:00 PM - 4:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="3:00PM-4:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									4:00 PM - 5:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="4:00PM-5:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									5:00 PM - 6:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="5:00PM-6:00PM">
+							</div>
+						</div>
+
+						<div class="timevisedisplay" id="evening">
+							<div class="booking-timing">
+								<div class="book-time">
+									6:00 PM - 7:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="6:00PM-7:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									7:00 PM - 8:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="7:00PM-8:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									8:00 PM - 9:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="8:00PM-9:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									9:00 PM - 10:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="9:00PM-10:00PM">
+							</div>
+							<div class="booking-timing">
+								<div class="book-time">
+									10:00 PM - 11:00 PM
+								</div>
+								<input type="checkbox" class="book-time-add" value="10:00PM-11:00PM">
+							</div>
+						</div>
+
+						<div class="see-total-booking-amt">
+							<p><span id="count">0</span> Slot &#8377; <span id="total">0</span></p>
+							<p style="float: right;"><i class="fas fa-arrow-right"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</body>
+</html>

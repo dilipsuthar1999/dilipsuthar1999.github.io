@@ -1,0 +1,268 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	font-family: 'Acme', sans-serif;
+}
+
+.navbar, .container-fluid{
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.navbar{
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.logo{
+	width: 100px;
+	height: auto;
+}
+
+.cname{
+	font-weight: bold;
+	display: inline-block;
+	font-size: 30px;
+	padding-top: 20px;
+	color: #746748;
+}
+
+.head-contain{
+	font-size: 20px;
+}
+
+.nav-link{
+	color: #746748; 
+}
+
+.nav-link:hover{
+	color: #584D30;
+}
+
+.nav-data{
+	font-size: 18px;
+}
+
+.title{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #1C1918;
+}
+
+.view{
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
+	color: #FF5656;
+}
+
+.view:hover{
+	color: #FF5656;
+}
+
+.practice{
+	margin-top: 25px;
+}
+
+.practice-img{
+	border-radius: 10px;
+}
+
+.practice-img:hover{
+	opacity: 0.6
+}
+
+.practice-title{
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: #FFFFFF;
+  	font-weight: bold;
+  	text-align: center;
+  	font-size: 20px;
+}
+
+.lawyer{
+	background: linear-gradient(
+      rgba(59, 32, 8, 0.45), 
+      rgba(59, 32, 8, 0.45)
+    ),
+    url('template.png');
+}
+
+.lawyer-lg{
+	display: flex;
+}
+
+.lawyer-md{
+	display: none;
+}
+
+.lawyer-sm{
+	display: none;
+}
+
+.lawyer-card{
+	background-color: #FFFFFF;
+	margin-top: 20px;
+}
+
+.lawyer-name{
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.lawyer-head{
+	text-align: center;
+	font-size: 15px;
+}
+
+.lawyer-contain{
+	text-align: center;
+	padding: 10px 5px 5px 5px;
+}
+
+.location{
+	padding-top: 50px;
+}
+
+.fa-search-location{
+	font-size: 200px;
+	text-align: center;
+	margin-top: 75px;
+	color: #161616;	
+}
+
+.footer{
+	background-color: #161616;
+}
+
+.footer-title{
+	font-weight: bold;
+	color: #D9D9D9;
+	padding: 50px 50px 0px 50px;
+}
+
+.footer-contain{
+	color: #707070;
+	padding: 0px 50px 0px 50px;
+}
+
+.footer-icons{
+	color: #D9D9D9;
+	padding: 10px 50px 0px 50px;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 1200px){
+}
+
+@media screen and (max-width: 992px){
+	.fa-search-location{
+		font-size: 150px;
+		margin-top: 70px;
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.contact-detail{
+		display: none;
+	}
+
+	.title{
+		margin-top: 30px;
+		font-size: 25px;
+	}
+
+	.view{
+		font-size: 15px;
+	}
+
+	.practice-title{
+		font-size: 18px;
+	}
+
+	.lawyer-lg{
+		display: none;
+	}
+
+	.lawyer-md{
+		display: flex;
+	}
+
+	.lawyer-sm{
+		display: none;
+	}
+
+	.fa-search-location{
+		font-size: 150px;
+		margin-top: 45px;
+	}	
+}
+
+@media screen and (max-width: 576px){
+	.navbar, .container-fluid{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.logo{
+		width: 50px;
+		height: auto;
+	}	
+
+	.cname{
+		font-size: 20px;
+		padding-top: 5px;
+	}
+
+	.contact-detail{
+		display: none;
+	}
+
+	.practice-title{
+		font-size: 15px;
+	}
+
+	.title{
+		margin-top: 30px;
+		font-size: 20px;
+	}
+
+	.view{
+		font-size: 15px;
+	}
+
+	.lawyer-lg{
+		display: none;
+	}
+
+	.lawyer-md{
+		display: none;
+	}
+
+	.lawyer-sm{
+		display: flex;
+	}
+
+	.fa-search-location{	
+		margin-top: 0px;
+		margin-bottom: 10px;
+		font-size: 75px;
+	}
+
+	.footer-title{
+		padding-top: 50px;
+	}
+}
