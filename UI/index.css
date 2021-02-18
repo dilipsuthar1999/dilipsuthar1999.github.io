@@ -158,7 +158,8 @@ body{
 }
 
 .filter-btn>svg{
-	width: 80%;	
+	width: 60%;
+	padding-top: 10px;
 }
 
 .filter{
