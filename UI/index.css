@@ -153,13 +153,13 @@ body{
 	position: fixed;
 	bottom: 5%;
 	right: 4%;
-	color: #fff;
+	color: #000;
 	outline: none;
 }
 
 .filter-btn>svg{
 	width: 60%;
-	padding-top: 15px;
+	padding-top: 12px;
 }
 
 .filter{
