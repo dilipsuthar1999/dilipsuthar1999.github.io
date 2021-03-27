@@ -1,0 +1,434 @@
+*{
+	box-sizing: border-box;
+	font-family: "Candara";
+	letter-spacing: 0.1em;
+}
+
+body{
+	margin: 0px;
+}
+
+@font-face{ 
+	font-family: "Candara";
+	src: url('font/Candara.TTF');
+}
+
+.navbar{
+	background-color: #41228E;
+}
+
+.navbar-logo{
+	width: 100px;
+	height: 100px;
+}
+
+.nav-link{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
+
+.nav-link:hover{
+	text-decoration: underline;
+	color: #fff;
+}
+
+.jumbotron{
+	padding: 300px 0px 300px 0px;
+	background-color: #41228E;
+	border-radius: 0px;
+	position: relative;
+	z-index: 2;
+}
+
+.jumbotron-heading{
+	font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+	z-index: 1;
+}
+
+.jumbotron-title{
+	font-size: 60px;
+	color: #fff;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.wave{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+}
+
+.yellow-leaf{
+	position: absolute;
+	top: 150px;
+	right: 0px;
+	height: 200px;
+	z-index: -1;
+}
+
+.green-tree{
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	height: 200px;
+	z-index: -1;
+}
+
+.green-leaf{
+	position: absolute;
+	bottom: 0px;
+	left: 150px;
+	height: 150px;
+	z-index: -1;
+}
+
+.light-leaf{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: -1;
+}
+
+.net{
+	position: absolute;
+	top: 150px;
+	left: 500px;
+	height: 80px;
+	z-index: -1;
+}
+
+.octopus{
+	position: absolute;
+	bottom: 50px;
+	left: 600px;
+	height: 120px;
+	z-index: -1;
+}
+
+.fish{
+	position: absolute;
+	bottom: 300px;
+	left: 890px;
+	height: 100px;
+	z-index: -1;
+}
+
+.about-contant{
+	font-size: 20px;
+	padding: 25px 100px;
+}
+
+.heading{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.skills-img{
+	width: 75px;
+	height: 75px;
+}
+
+.skills-img:hover{
+	box-shadow: 0px 0px 20px #101010;
+}
+
+.bg-1{
+	background: url('image/bg-img-1.png') no-repeat;
+	background-size: cover;
+}
+
+.job-time{
+	font-size: 16px;
+	margin: 0px;
+	color: #8c8c8c;
+}
+
+.job-type{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.job-name{
+	font-size: 18px;
+	margin: 0px;
+	color: #808080;
+}
+
+.padding{
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.background-color{
+	background-color: #41228E;
+	padding: 150px 0px;
+	position: relative;
+}
+
+.box{
+	background-color: #fff;
+	margin-top: 30px;
+}
+
+.bg-2{
+	background: url('image/bg-img-2.png') no-repeat;
+	background-size: cover;
+}
+
+.input-box{
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px 0px;
+	border: none;
+	border-bottom: 1px solid #ced4da;
+	outline: none;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.btn{
+	background-color: #41228E;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.btn:hover{
+	color: #fff;
+}
+
+.bg-3{
+	background-color: #41228E;
+}
+
+.pro-img-1{
+	height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-img-2{
+	height: 185px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-overlayer{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.25);
+    transition: opacity 0.15s ease-in;
+    opacity: 0;
+}
+
+.hover-overlayer>.btn{
+	background-color: #fff;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.pro-img-1:hover .hover-overlayer, .pro-img-2:hover .hover-overlayer{
+	opacity: 1;
+}
+
+.more-project, .more-project:hover{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1200px){
+}
+
+@media screen and (max-width: 991px){
+	.jumbotron-heading{
+		font-size: 70px;
+	}
+
+	.jumbotron-title{
+		font-size: 50px;
+	}
+
+	.yellow-leaf{
+		height: 150px;
+	}	
+
+	.net{
+		left: 300px;
+	}
+
+	.light-leaf{
+		height: 100px;
+	}
+
+	.octopus{
+		left: 450px;
+	}
+
+	.fish{
+		left: 650px;
+		bottom: 200px;
+	}
+
+	.about-contant{
+		padding: 25px 50px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.jumbotron{
+		padding: 250px 0px 200px 0px;
+		background-color: #41228E;
+	}
+
+	.jumbotron-heading{
+		font-size: 60px;
+	}
+
+	.jumbotron-title{
+		font-size: 40px;
+	}
+
+	.net{
+		top: 150px;
+	}
+
+	.green-tree{
+		height: 150px;
+	}
+
+	.yellow-leaf{
+		display: none;
+	}
+
+	.octopus{
+		left: 300px;
+		height: 100px;
+	}
+
+	.fish{
+		bottom: 300px;
+		left: unset;
+		right: 50px;
+		height: 80px;
+	}
+
+	.about-contant{
+		font-size: 16px;
+		padding: 20px 0px;
+	}
+
+	.heading{
+		font-size: 35px;
+	}
+
+	.padding{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.pro-img-1, .pro-img-2{
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.navbar-logo{
+		width: 75px;
+		height: 75px;
+	}
+
+	.jumbotron-heading{
+		font-size: 50px;
+	}
+
+	.jumbotron-title{
+		font-size: 30px;
+	}
+
+	.octopus{
+		left: unset;
+		right: 100px;
+	}
+
+	.fish{
+		bottom: unset;
+		top: 200px;
+	}
+
+	.light-leaf{
+		display: none;
+	}
+
+	.net{
+		left: 100px;
+		height: 50px;
+	}
+}
+
+
+@media screen and (max-width: 460px){
+	.jumbotron-heading{
+		font-size: 40px;
+	}
+
+	.jumbotron-title{
+		font-size: 20px;
+	}
+
+	.net{
+		left: 50px;
+		height: 50px;
+	}
+
+	.green-leaf{
+		left: 100px;
+	}
+
+	.octopus{
+		right: 50px;
+		height: 75px;
+	}
+
+	.fish{
+		top: 175px;
+		height: 60px;
+	}
+
+	.skills-img{
+		width: 50px;
+		height: 50px;
+	}
+
+	.job-time{
+		font-size: 12px;
+	}
+
+	.job-type{
+		font-size: 16px;
+	}
+
+	.job-name{
+		font-size: 14px;
+	}
+}

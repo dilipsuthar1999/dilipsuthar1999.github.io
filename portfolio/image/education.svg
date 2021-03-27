@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <filter id="Ellipse_70" x="0" y="0" width="300" height="300" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feFlood flood-color="#707070" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_96" data-name="Group 96" transform="translate(-91 -2942)">
+    <g transform="matrix(1, 0, 0, 1, 91, 2942)" filter="url(#Ellipse_70)">
+      <circle id="Ellipse_70-2" data-name="Ellipse 70" cx="75" cy="75" r="75" transform="translate(75 75)" fill="#fff"/>
+    </g>
+    <path id="Icon_awesome-medal" data-name="Icon awesome-medal" d="M34.961,20.43l-10.8-18A5,5,0,0,0,19.872,0H2.5A2.5,2.5,0,0,0,.456,3.934L17.842,28.772A32.337,32.337,0,0,1,34.961,20.43ZM77.5,0H60.128a5,5,0,0,0-4.288,2.428l-10.8,18A32.347,32.347,0,0,1,62.158,28.77L79.544,3.934A2.5,2.5,0,0,0,77.5,0ZM40,25A27.5,27.5,0,1,0,67.5,52.5,27.5,27.5,0,0,0,40,25ZM54.456,49.572,48.53,55.347l1.4,8.159a1.794,1.794,0,0,1-2.6,1.889L40,61.544,32.672,65.4a1.793,1.793,0,0,1-2.6-1.889l1.4-8.159-5.927-5.775a1.8,1.8,0,0,1,.992-3.061l8.192-1.194,3.661-7.425a1.8,1.8,0,0,1,3.22,0l3.661,7.425,8.192,1.194A1.8,1.8,0,0,1,54.456,49.572Z" transform="translate(202 3052)" fill="#ccc"/>
+  </g>
+</svg>
