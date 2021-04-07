@@ -1,0 +1,281 @@
+*{
+	box-sizing: border-box;
+	font-family: "Candara";
+	letter-spacing: 0.1em;
+}
+
+body{
+	margin: 0px;
+}
+
+@font-face{ 
+	font-family: "Candara";
+	src: url('font/Candara.TTF');
+}
+
+@font-face{
+	font-family: "SegoePrint";
+	src: url('font/SegoePrint.TTF');
+}
+
+@font-face{ 
+	font-family: "Maiandra GD";
+	src: url('font/Maiandra GD.TTF');
+}
+
+.bg-org{
+	background-color: #FEEBE4;
+	padding-top: 30px; 
+	padding-bottom: 30px;
+}
+
+.bg-blue{
+	background-color: #F1FEFF;
+	padding-top: 50px; 
+	padding-bottom: 50px;
+}
+
+.navbar{
+	background-color: #FEEBE4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar-brand-logo{
+	height: 50px;
+	float: left;
+}
+
+.navbar-search-box{
+	width: 300px;
+	border: none;
+	border-radius: 50px;
+	padding: 8px 50px 8px 20px;
+	outline: none;
+}
+
+.navbar-icon-border{
+	background-color: #FDD5C7;
+	border-radius: 50px;
+}
+
+.navbar-icon{
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+}
+
+.head-text{
+	font-family: "SegoePrint";
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.btn{
+	background-color: #FF7140;
+	color: #fff;
+	border-radius: 50px;
+	font-family: "SegoePrint";
+	font-weight: 600;
+}
+
+.btn:hover{
+	color: #fff;
+}
+
+.heading{
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.books-box{
+	width: 100%;
+	overflow-x: scroll;
+}
+
+.books-row{
+	width: 960px;
+}
+
+.books-col{
+	width: 180px;
+	margin-right: 80px;
+	display: inline-block;
+	float: left;
+}
+
+.books-box{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.books-box::-webkit-scrollbar{ 
+    display: none;  /* Safari and Chrome */
+}
+
+.bg-pink-l{
+	background-color: #FEEBE4;
+	width: 50%;
+	height: 320px;
+	padding: 50px;
+}
+
+.bg-pink-d{
+	background-color: #FDD5C7;
+	width: 50%;
+	height: 320px;
+	padding: 50px;
+}
+
+.offer-txt-head{
+	font-size: 35px;
+}
+
+.offer-txt-content{
+	font-size: 20px;
+}
+
+.bg-black{
+	background-color: #232323;
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.footer-head{
+	font-size: 22px;
+	color: #FF7241;
+	font-weight: bold;
+}
+
+.footer-head:after{
+	content: '';
+	display: block;
+	width: 75px;
+	height: 2px;
+	background-color: #fff;
+	align-content: center;
+}
+
+.footer-content{
+	font-family: "Maiandra GD";	
+	font-size: 16px;
+	color: #fff;
+}
+
+@media screen and (max-width: 1200px){
+	.bg-pink-l{
+		height: 280px;
+	}
+
+	.bg-pink-d{
+		height: 280px;
+	}
+
+	.offer-txt-head{
+		font-size: 25px;
+	}
+
+	.offer-txt-content{
+		font-size: 18px;
+	}
+
+	.bg-pink-l a{
+		font-size: 10px;
+	}
+
+	.bg-pink-d a{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.head-text{
+		font-size: 30px;
+	}
+
+	.bg-pink-l{
+		padding: 50px 25px;
+		height: 260px;
+	}
+
+	.bg-pink-d{
+		padding: 50px 25px;
+		height: 260px;
+	}
+
+	.offer-txt-head{
+		font-size: 20px;
+	}
+
+	.offer-txt-content{
+		font-size: 16px;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	.navbar-brand-logo{
+		height: 40px;
+	}
+
+	.head-text{
+		font-size: 40px;
+	}
+
+	.books-row{
+		width: 840px;
+	}	
+
+	.books-col{
+		width: 150px;
+	}
+
+	.bg-pink-l{
+		width: 100%;
+		height: auto;
+		padding-left: 70px;
+	}
+
+	.bg-pink-d{
+		width: 100%;
+		height: auto;
+	}
+
+	.offer-txt-head{
+		font-size: 30px;
+	}
+
+	.offer-txt-content{
+		font-size: 20px;
+	}
+
+}
+
+@media screen and (max-width: 576px){
+	.heading{
+		font-size: 20px;
+	}
+}
+
+
+@media screen and (max-width: 460px){
+	.head-text{
+		font-size: 30px;
+	}
+
+	.bg-pink-l{
+		padding: 50px 15px;
+	}
+
+	.bg-pink-d{
+		padding: 50px 15px;
+	}
+
+	.offer-txt-head{
+		font-size: 20px;
+	}
+
+	.offer-txt-content{
+		font-size: 16px;
+	}
+}
