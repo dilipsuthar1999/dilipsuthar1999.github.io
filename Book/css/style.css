@@ -155,6 +155,84 @@ body{
 	color: #fff;
 }
 
+.product-img-box{
+	background-color: #FDD5C7;
+}
+
+.product-img{
+	padding: 50px;
+}
+
+.product-content-box{
+	padding: 0px 50px;
+}
+
+.product-content-head{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.product-content-foot{
+	font-size: 16px;
+}
+
+.product-content-price{
+	font-family: "Maiandra GD";
+	font-size: 25px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.product-content-price-off{
+	font-family: "Maiandra GD";
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 50px;
+	color: #8B8B8B;
+}
+
+.cart-button>button, .cart-button>input[type=number]{
+	font-family: "Maiandra GD";
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	font-size: 16px;
+	text-align: center;
+	float: left;
+	border: 1px solid #333;
+	background-color: #f5f4f4;
+	outline: none;
+}
+
+.cart-button>input[type=number]{
+	border-left: 0px;
+	border-right: 0px;
+	background-color: #fff;
+}
+
+.cart-button>input[type=number]::-webkit-inner-spin-button, 
+.cart-button>input[type=number]::-webkit-outer-spin-button {
+  	-webkit-appearance: none; 
+  	margin: 0; 
+}
+
+.cart-button>.add-btn{
+	background-color: #FF7140;
+	width: unset;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.rating{
+	width: 25px;
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 1200px){
 	.bg-pink-l{
 		height: 280px;
@@ -241,12 +319,39 @@ body{
 	.offer-txt-content{
 		font-size: 20px;
 	}
+	
+	.product{
+		padding-bottom: 0px;
+	}
+
+	.product-img-box{
+		background-color: transparent;
+	}
+
+	.product-img{
+		padding: 10px 150px 50px 150px;
+	}
+
+	.product-content-box{
+		background-color: #FDD5C7;
+		border-radius: 50px 50px 0px 0px;
+		padding: 50px 150px;
+	}
 
 }
 
 @media screen and (max-width: 576px){
 	.heading{
 		font-size: 20px;
+	}
+
+	.product-img{
+		padding: 10px 50px 50px 50px;
+	}
+
+	.product-content-box{
+		border-radius: 50px 50px 0px 0px;
+		padding: 50px 25px;
 	}
 }
 
