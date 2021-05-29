@@ -260,6 +260,10 @@
 		height: auto;
 	}
 
+	.song-row{
+		width: 870px;
+	}
+	
 	.song-col{
 		width: 120px;
 		margin-right: 25px;
