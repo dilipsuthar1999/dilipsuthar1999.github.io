@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="566.872" height="150" viewBox="0 0 566.872 150">
-  <g id="Group_145" data-name="Group 145" transform="translate(2731.438 -194)">
-    <text id="Book" transform="translate(-2701.396 301)" fill="#ff7241" font-size="86" font-family="SegoePrint-Bold, Segoe Print" font-weight="700"><tspan x="0" y="0">Book</tspan></text>
-    <text id="House" transform="translate(-2455.263 301)" fill="#f9f9f9" font-size="86" font-family="SegoePrint-Bold, Segoe Print" font-weight="700"><tspan x="0" y="0">House</tspan></text>
-    <path id="Path_1284" data-name="Path 1284" d="M-2477.874,323.7h-251.063V204.95h251.063" transform="translate(0 11.451)" fill="none" stroke="#ff7241" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
-    <path id="Path_1285" data-name="Path 1285" d="M-2728.937,323.7h281.944V204.95h-281.944" transform="translate(279.927 11.451)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
-  </g>
-</svg>
