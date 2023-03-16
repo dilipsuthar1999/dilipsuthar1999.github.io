@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
-  <defs>
-    <linearGradient id="linear-gradient" x1="-0.087" y1="0.173" x2="1.307" y2="1.631" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#f61f1f"/>
-      <stop offset="1" stop-color="#f926eb"/>
-    </linearGradient>
-  </defs>
-  <path id="Icon_open-play-circle" data-name="Icon open-play-circle" d="M25,0A25,25,0,1,0,50,25,24.993,24.993,0,0,0,25,0ZM18.75,12.5,37.5,25,18.75,37.5Z" fill="url(#linear-gradient)"/>
-</svg>
